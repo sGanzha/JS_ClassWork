@@ -202,13 +202,11 @@ data.exchangeRate.forEach((elem) => {
         td = create("td"),
         td1 = create("td"),
         td2 = create("td");
-        
-        td.innerText=elem.currency;
-        td1.innerText=elem.purchaseRateNB.toFixed(2);
-        td2.innerText=elem.saleRateNB.toFixed(2);
 
-        tr.append(td,td1,td2);
-        tbody.append(tr);
+    td.innerText = elem.currency;
+    td1.innerText = elem.purchaseRateNB.toFixed(2);
+    td2.innerText = elem.saleRateNB.toFixed(2);
 
-        
+    tr.append(td, td1, td2);
+    tbody.append(tr);
 });
